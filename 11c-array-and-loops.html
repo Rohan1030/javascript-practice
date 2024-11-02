@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+   function arraySwap(array)
+   {
+      const lastindex = array.length-1;
+      
+
+      const lastvalue = array[lastindex];
+      const firstvalue = array[0];
+
+
+      array[0] = lastvalue;
+      array[lastindex] = firstvalue;
+
+      return array;
+
+
+
+
+   }
+
+   console.log(arraySwap([1,20,22,24,5]));
+   console.log(arraySwap(['hi','hello','hey']));
+
+
+
+  </script>
+</body>
+</html>

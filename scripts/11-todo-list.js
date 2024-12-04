@@ -24,15 +24,15 @@ for(let i=0; i<todoList.length; i++)
       
 
       const html = 
-      `<p> ${name} ${dueDate}
-       <button onclick = "
+      `
+      <div> ${name} </div>
+      <div>${dueDate} </div>
+            <button onclick = "
 
-       todoList.splice(${i},1);
-       renderTodolist();
-       
-       ">Delete</button>
-      </p>`
-      ;
+            todoList.splice(${i},1);
+            renderTodolist();
+            
+            " class = "delete-todo-button">Delete</button>`;
       todoListHTML += html;
 }
 console.log(todoListHTML);
